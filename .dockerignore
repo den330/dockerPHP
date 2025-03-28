@@ -1,4 +1,4 @@
-# Top-level ignores for non-Laravel files
+# Top-level folders that are not part of the Laravel project
 /app/
 /bootstrap/
 /config/
@@ -29,16 +29,12 @@ src/public/js/*
 src/public/mix-manifest.json
 src/public/build/*
 src/public/assets/*
-!src/public/css/app.css  # Include specific files if needed
-!src/public/js/app.js
 
 # Docker-specific ignores
-/docker-compose.override.yml
-/docker/volumes/*
-/docker/data/*
-/docker/mysql-data/*
-/docker/nginx/logs/*
-/docker/php/logs/*
+docker-compose.yml
+docker-compose.override.yml
+/docker/
+/docker-compose*.yml
 
 # Sensitive files
 .env
@@ -49,10 +45,9 @@ src/.env.backup
 src/.env.example.backup
 
 # Git and version control
+.git/
+.gitignore
 .gitattributes
-src/.git/
-src/.gitignore
-src/.gitattributes
 
 # Editor and IDE files
 .idea/
@@ -63,6 +58,13 @@ src/.gitattributes
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Documentation and miscellaneous
+README.md
+README.xml
+*.md
+*.txt
+LICENSE
 
 # Testing and coverage reports
 src/coverage/*
@@ -77,3 +79,7 @@ yarn-error.log
 *.swo
 *.bak
 *.tmp
+
+# Composer and npm lock files (optional)
+src/composer.lock
+src/package-lock.json
