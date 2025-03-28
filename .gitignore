@@ -1,0 +1,61 @@
+# Laravel-specific ignores
+/vendor/
+node_modules/
+public/hot
+public/storage
+storage/*.key
+.env
+.env.backup
+.env.example.backup
+Homestead.yaml
+Homestead.json
+.phpunit.result.cache
+
+# Laravel logs and caches
+/storage/logs/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/cache/*
+/storage/framework/testing/*
+/bootstrap/cache/*
+
+# Frontend build artifacts (if using npm/yarn for frontend assets)
+public/css/*
+public/js/*
+public/mix-manifest.json
+/public/build/*
+/public/assets/*
+!/public/css/app.css  # Include specific files if needed
+!/public/js/app.js
+
+# Docker-specific ignores
+/docker-compose.override.yml
+/docker/volumes/*
+/docker/data/*
+/docker/mysql-data/*
+/docker/nginx/logs/*
+/docker/php/logs/*
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Testing and coverage reports
+/coverage/*
+/tests/_output/*
+/tests/_support/_generated/*
+
+# Miscellaneous
+*.log
+npm-debug.log
+yarn-error.log
+*.swp
+*.swo
+*.bak
+*.tmp
